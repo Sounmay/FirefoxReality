@@ -100,17 +100,17 @@ simultaneousDevProduction=true
 ```
 ## Locally generate Android release builds
 
-Local release builds can be useful to measure performance or debug issues only happening in release builds. Insead of dealing with release keys you can make the testing easier just adding this property to your `user.properties` file:
+Local release builds can be useful to measure the performance or debug the issues which are only happening in release builds. Insead of dealing with release keys you can make the testing easier by just adding this property to your `user.properties` file:
 
 ```ini
 useDebugSigningOnRelease=true
 ```
 
-Note: the release APKs generated with a debug keystore can't be used for production.
+Note: the released APKs generated with a debug keystore can't be used for production.
 
 ## Compress assets
 
-ETC2 compression is used to improve performance and memory usage. Raw assets are placed in the `uncompressed_assets` folder. You can generate the compressed textures using the compressor utility in `tools/compressor`. You need to set up [etc2comp](https://github.com/google/etc2comp) and make it available on your PATH before running the script. Run this command to generate the compressed assets:
+ETC2 compression is used to improve performance and memory usage. Raw assets are placed in the `uncompressed_assets` folder. You can generate the compressed textures by using the compressor utility in `tools/compressor`. You need to set up [etc2comp](https://github.com/google/etc2comp) and make it available on your PATH before running the script. Run this command to generate the compressed assets:
 
 ```bash
 cd tools/compressor
